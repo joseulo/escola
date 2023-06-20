@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt" class=" js csstransforms csstransforms3d csstransitions">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="keyword" content="JHS Incrição online">
+        <link rel="stylesheet" href="../CSS/estilo1.css">
+        <link rel="stylesheet" href="../CSS/estiloin.css">
+        <link rel="stylesheet" href="../CSS/bootstrap.css">
+		<title>Inscrição - JHS</title>
+	</head>
+	<body cz-shortcut-listen="true">
+        <header>
+            <!--Area para o cabeçalho da página-->
+            <!--Inclui o logotipo, botão de login-->
+            <div id="logo">
+            <h1>JHS</h1>
+            <p>O seu lugar do saber</p>
+            </div>
+            <div id="menu">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                    <div class="container">
+                        <a class="navbar-brand" href="#">JHS</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link" href="../index.html">Início</a></li>
+                            <li class="nav-item"><a class="nav-link" href="curso.html">Cursos</a></li>
+                            <li class="nav-item"><a class="nav-link active" aria-current="page" href="inscrição.html">Inscrição</a></li>
+                            <li class="nav-item"><a class="nav-link" href="faq.html">FQA</a></li>
+                            <li class="nav-item"><a class="nav-link" href="servico.html">Serviços</a></li>
+                          </ul>
+                          <a href="HTML/login.html"><button class="btn btn-dark" type="submit">Entrar</button></a>
+                      </div>
+                  </div>
+              </nav>
+              </div>
+        </header>
+        
+    <main id="princ">
+            <!--Conteúdo principal do site-->
+            <!--Aqui contém o formulário de inscrição para alunos-->
+
+    <form action="" method="post">
+                
+    <fieldset id="usuario"><legend>Identificação do Candidato</legend>
+    <p><label for="cNome">Nome Completo<input type="text" name="tNome" id="cNome" size="20" maxlength="30" placeholder="Nome Completo"></label></p>
+    
+    <p><label for="cSenha">Telefone<input type="number" name="tnumber" id="cnumber" size="20" maxlength="20" placeholder="9 dígitos no máximo"></label></p>
+    
+    <p><label for="cMail">E-mail <input type="email" name="tMail" id="cMail" size="20" maxlength="40"></label></p>
+    
+    <fieldset id="Sexo"><legend>Gênero</legend>
+    <p><input type="radio" name="tgenero" id="cMasc"><label for="cMasc">Msculino</label></p>
+    <p><input type="radio" name="tgenero" id="cFem"><label for="cFem">Femenino</label></p>
+    </fieldset>
+
+    <p><label for="cData">Data de Nascimento<input type="date" name="tData" id="cData"></label></p> 
+
+    <p><label for="cMun">Endereço</label><input type="text" name="tendereco" id="cendereco" size="20" maxlength="60" placeholder="O seu endereço"></p> 
+   </fieldset>
+   
+   <!--fieldset id="endereco"><legend>Endereço do Usuário</legend>
+    <p><label for="tProv">Provincia</label><select name="cProv" id="tProv">
+     <optgroup label="Províncias Principais">
+      <option>Luanda</option>
+      <option>Cabinda</option>
+      <option>Huambo</option>
+     </optgroup>
+     <optgroup label="Províncias Secundárias">
+      <option>Malanje</option>
+      <option>Huíla</option>
+      <option>Benguela</option>
+     </optgroup> 
+    </select></p-->
+    
+    <p><label for="cMun">Município</label><input type="text" name="tMun" id="cMun" size="20" maxlength="60" placeholder="O Teu Município" list="Municipios"></p>
+    <datalist id="Municipios">
+    <option value="Viana"></option>
+    <option value="Cazenga"></option>
+    <option value="Belas"></option>
+    <option value="Cacuaco"></option>
+    </datalist>
+    
+    <p><label for="cBai">Bairro</label><input type="text" name="tBai" id="cBai" size="20" maxlength="70" placeholder="Rua, nª de casa"></p>
+    <p><label for="tNum">Numero</label><input type="number" name="tNum" id="tNum" min="0" max="1000000"></p>
+   </fieldset>
+   
+   <fieldset id="mensagem"><legend>Mensagem do Usuário</legend>
+    <p><label for="cUrg">Grau de Urgência</label> <br> Min<input type="range" name="tUrg" id="cUrg" min="1" max="10">Max</p>
+    <p><label for="cMen">Mensagem</label><textarea name="tMen" id="CMen" cols="45" rows="5" placeholder="Informe o que Precisas"></textarea></p>
+   </fieldset>
+   
+   <fieldset id="pedido"><legend>Quero um Router</legend>
+   <p><input type="checkbox" name="tGost" id="cGost"><label for="cGost">Gostaria de adqurir um Router?</label></p>
+   <p><label for="cCol">Cor</label><input type="color" name="tCol" id="cCol"></p>
+   <p><label for="cQtd">Quantidade</label><input type="number" name="tQtd" id="cQtd" min="1" max="6" value="1"></p>
+   <p><label for="cPrec">Preço Total</label><input type="text" name="tPrec" id="cPrec" placeholder="Total a Pagar" readonly></p>
+   </fieldset>
+   <input type="image" name="tIm" id="cIm" src="../Imagens/Imagens/botao-enviar.png">
+    </form>
+</main>
+
+<footer>
+            <!--Rodapé da pagina-->
+            <P>Site Criado por Manuel Sampaio| José Ulo| Hernany Zua</P>
+</footer>
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
